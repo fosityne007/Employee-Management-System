@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+  <!--
+    Example Maven settings for running the Employee Management System project.
+
+    ⚙️ INSTRUCTIONS:
+    1. Copy this file to your Maven settings directory:
+       Windows:  C:\Users\<YourName>\.m2\settings.xml
+       macOS/Linux:  ~/.m2/settings.xml
+
+    2. Replace <YourName> with your actual username.
+
+    3. Ensure <offline>false</offline> so Maven can download dependencies online.
+
+    4. Do NOT commit your personal settings.xml to version control.
+       This example file is for documentation and onboarding new developers.
+  -->
+
+  <!-- Local repository (optional, Maven uses default if not specified) -->
+  <localRepository>C:\Users\<YourName>\.m2\repository</localRepository>
+
+  <!-- Work online -->
+  <offline>false</offline>
+
+  <!-- Repository mirrors (optional) -->
+  <mirrors>
+    <!-- Example: Uncomment and configure if using a corporate or proxy mirror -->
+    <!--
+    <mirror>
+      <id>central-mirror</id>
+      <name>Central Repository Mirror</name>
+      <url>https://repo.maven.apache.org/maven2</url>
+      <mirrorOf>central</mirrorOf>
+    </mirror>
+    -->
+  </mirrors>
+
+  <!-- Plugin groups -->
+  <pluginGroups>
+    <pluginGroup>org.springframework.boot</pluginGroup>
+  </pluginGroups>
+
+  <!-- Default profile -->
+  <profiles>
+    <profile>
+      <id>default</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+    </profile>
+  </profiles>
+
+</settings>
